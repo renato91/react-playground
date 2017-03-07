@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Modal from './Modal.js';
+
 import style from './../assets/css/style.scss';
+
 
 var App = React.createClass({
     
@@ -20,7 +22,7 @@ var App = React.createClass({
 
     render: function() {
         var child;
-        
+
         document.title = "React Example 01";
         
         if(this.state.mounted) {
