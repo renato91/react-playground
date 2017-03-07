@@ -1,0 +1,25 @@
+{
+  "name": "neutrino_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "neutrino": "^4.0.1",
+    "neutrino-preset-react": "^4.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react_test": "^1.0.0"
+  },
+  "devDependencies": {
+    "neutrino": "^4.0.1",
+    "neutrino-preset-react": "^4.0.1",
+    "react_test": "^1.0.0"
+  },
+  "scripts": {
+    "start": "neutrino start --presets neutrino-preset-react",
+    "build": "neutrino build --presets neutrino-preset-react"
+  },
+  "author": "",
+  "license": "ISC"
+}
