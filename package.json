@@ -6,19 +6,33 @@
   "dependencies": {
     "neutrino": "^4.0.1",
     "neutrino-preset-react": "^4.0.1",
+    "neutrino-preset-sass": "^1.0.3",
     "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-hot-loader": "^3.0.0-beta.6",
     "react_test": "^1.0.0"
   },
   "devDependencies": {
     "neutrino": "^4.0.1",
+    "neutrino-preset-jest": "^4.3.0",
     "neutrino-preset-react": "^4.0.1",
-    "react_test": "^1.0.0"
+    "neutrino-preset-sass": "^1.0.3",
+    "node-sass": "^4.5.0",
+    "react_test": "^1.0.0",
+    "sass-loader": "^6.0.2",
+    "webpack": "^2.2.1"
+  },
+  "config": {
+    "presets": [
+      "neutrino-preset-react",
+      "neutrino-preset-sass",
+      "neutrino-preset-jest"
+    ]
   },
   "scripts": {
-    "start": "neutrino start --presets neutrino-preset-react",
-    "build": "neutrino build --presets neutrino-preset-react"
+    "start": "neutrino start",
+    "build": "neutrino build"
   },
   "author": "",
   "license": "ISC"

@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TimerComponent from './components/TimerComponent/TimerComponent';
+import App from './components/App.js';
 
-var start = new Date().getTime(); 
-
-setInterval(function() {
-  ReactDOM.render(<TimerComponent elapsed={new Date().getTime() - start} />, 
-    document.getElementById('root')
+ReactDOM.render(
+	<App />,
+	document.getElementById('root')
 );
- }, 50);
