@@ -69,27 +69,27 @@ body {
 		}
 		
 		// Icon abstractions
-		&[type='text'] {
-			~ label {
-				&::before {
-					content: "\f007";	
-				}
-			}
-		}
-		&[type='email'] {
-			~ label {
-				&::before {
-					content: "\f1fa";
-				}
-			}
-		}
-		&[type='password'] {
-			~ label {
-				&::before {
-					content: "\f023";	
-				}
-			}
-		}
+		// &[type='text'] {
+		// 	~ label {
+		// 		&::before {
+		// 			content: "\f007";	
+		// 		}
+		// 	}
+		// }
+		// &[type='email'] {
+		// 	~ label {
+		// 		&::before {
+		// 			content: "\f1fa";
+		// 		}
+		// 	}
+		// }
+		// &[type='password'] {
+		// 	~ label {
+		// 		&::before {
+		// 			content: "\f023";	
+		// 		}
+		// 	}
+		// }
 	}
 	
 	label {
