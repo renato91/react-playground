@@ -1,33 +1,63 @@
 import React, { Component } from 'react';
-import { FaUser, FaLock, FaEnvelopeO } from 'react-icons/lib/fa'
+import { FaUser, FaLock, FaEnvelopeO } from 'react-icons/lib/fa';
 
-var Input = React.createClass({
-    renderlabel: function () {
-        var label;
-        switch (this.props.name) {
+var Icon = React.createClass({
+    render: function (input) {
+        var icon;
+        switch (input) {
             case "name":
-                label = (<label htmlFor={this.props.name}><FaUser /></label>);
+                icon = (<FaUser />);
                 break;
             case "username":
-                label = (<label htmlFor={this.props.name}><FaEnvelopeO /></label>);
+                icon = (<FaEnvelopeO />);
                 break;
             case "password":
-                label = (<label htmlFor={this.props.name}><FaLock /></label>);
+                icon = (<FaLock />);
                 break;
 
             default:
-                label = (<label htmlFor={this.props.name}><FaUser /></label>);
+                icon = (<FaUser />);
                 break;
         }
 
-        return label;
+        return icon;
+    }
+});
 
-    },
+var Label = (props) => (
+    <label htmlFor={props.name}>
+        {props.children}
+    </label>
+);
+
+var Input = React.createClass({
+    renderIcon: function (input) {   
+        var icon;
+        switch (input) {
+            case "name":
+                icon = (<FaUser />);
+                break;
+            case "username":
+                icon = (<FaEnvelopeO />);
+                break;
+            case "password":
+                icon = (<FaLock />);
+                break;
+
+            default:
+                icon = (<FaUser />);
+                break;
+        }
+       
+        return icon;
+},
     render: function () {
         return (
             <div className="Input">
                 <input id={this.props.name} autoComplete="false" required type={this.props.type} placeholder={this.props.placeholder} />
-                {this.renderlabel()} 
+                <Label>
+                    {this.renderIcon(this.props.id)}
+                </Label>
             </div>
         );
     }

@@ -67,29 +67,7 @@ body {
 		&:focus ~ label {
 			opacity: 1;
 		}
-		
-		// Icon abstractions
-		// &[type='text'] {
-		// 	~ label {
-		// 		&::before {
-		// 			content: "\f007";	
-		// 		}
-		// 	}
-		// }
-		// &[type='email'] {
-		// 	~ label {
-		// 		&::before {
-		// 			content: "\f1fa";
-		// 		}
-		// 	}
-		// }
-		// &[type='password'] {
-		// 	~ label {
-		// 		&::before {
-		// 			content: "\f023";	
-		// 		}
-		// 	}
-		// }
+	
 	}
 	
 	label {
@@ -97,14 +75,15 @@ body {
 		font-size: 13px;
 		opacity: .1;
 		transition: opacity .5s ease;
+		margin-right: 5px;
 		
-		&::before {
+		& svg{
 			align-items: center;
 			color: $cosmiclatte;
 			display: flex;
-			height: 30px;
+			height: 20px;
 			justify-content: center;
-			width: 30px;
+			width: 20px;
 		}
 	}
 }
